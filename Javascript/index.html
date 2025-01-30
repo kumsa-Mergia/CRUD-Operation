@@ -45,7 +45,7 @@
                             <td>Inspector</td>
                             <td>20-05-2017</td>
                             <td>
-                                <button class="btn btn-success">Show</button>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData">Show</button>
                                 <button class="btn btn-primary">Update</button>
                                 <button class="btn btn-danger">Delete</button>
                             </td>
@@ -63,7 +63,7 @@
                             <td>Inspector</td>
                             <td>20-05-2017</td>
                             <td>
-                                <button class="btn btn-success">Show</button>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData">Show</button>
                                 <button class="btn btn-primary">Update</button>
                                 <button class="btn btn-danger">Delete</button>
                             </td>
@@ -81,7 +81,7 @@
                             <td>Inspector</td>
                             <td>20-05-2017</td>
                             <td>
-                                <button class="btn btn-success">Show</button>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData">Show</button>
                                 <button class="btn btn-primary">Update</button>
                                 <button class="btn btn-danger">Delete</button>
                             </td>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <div class="modal fase" id="userForm">
+    <div class="modal fade" id="userForm">
         <div class="modal-dialog modal-dialog-centerd modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -104,11 +104,12 @@
                 <div class="modal-body">
 
                     <form action="#" id="myForm">
-                        <div class="card">
+                        <div class="card imgholder">
                             <label for="imgInput" class="upload">
                                 <input type="file" id="imgInput">
+                                <i>+</i>
                             </label>
-                            <img src="" alt="">
+                            <img src="./img/avatar-7.jpg" alt="" width="200" height="200">
                         </div>
 
                         <!-------------------->
@@ -118,42 +119,36 @@
                                 <input type="text" name="" id="name">
                             </div>
                         <!---------------------->
-                        <div class="inputField">
                             <div>
                                 <label for="age">Age</label>
                                 <input type="number" name="" id="age">
                             </div>
                         <!---------------------->
                         <!-------------------->
-                        <div class="inputField">
                             <div>
                                 <label for="city">City</label>
                                 <input type="text" name="" id="city">
                             </div>
                         <!---------------------->
                         <!-------------------->
-                        <div class="inputField">
                             <div>
                                 <label for="email">Email</label>
                                 <input type="email" name="" id="email">
                             </div>
                         <!---------------------->
                         <!-------------------->
-                        <div class="inputField">
                             <div>
                                 <label for="phone">Phone</label>
-                                <input type="number" name="" id="phone">
-                            </div>
-                        <!---------------------->
-                                                <!-------------------->
-                        <div class="inputField">
-                            <div>
-                                <label for="role">Role</label>
-                                <input type="text" name="" id="role">
+                                <input type="text" name="" id="phone" minlength="11" maxlength="11">
                             </div>
                         <!---------------------->
                         <!-------------------->
-                        <div class="inputField">
+                            <div>
+                                <label for="post">Post</label>
+                                <input type="text" name="" id="post">
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
                             <div>
                                 <label for="sDate">Start Date</label>
                                 <input type="date" name="" id="sDate">
@@ -161,11 +156,85 @@
                         <!---------------------->
 
                         </div>
+                        <!-------------------->
+
                     </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" form="myForm" class="btn btn-primary submit">submit</button>
                 </div>
 
             </div>
         </div>
+    </div>
+
+    <!----------------- READ DATA ------------------------->
+    <div class="modal fade" id="readData">
+        <div class="modal-dialog modal-dialog-centerd modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Profile</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" arial-lable="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+                        <div class="card imgholder">
+                            <img src="./img/avatar-7.jpg" alt="" width="200" height="200">
+                        </div>
+
+                        <!-------------------->
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="" id="name" disabled>
+                            </div>
+                        <!---------------------->
+                            <div>
+                                <label for="age">Age</label>
+                                <input type="number" name="" id="age" disabled>
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
+                            <div>
+                                <label for="city">City</label>
+                                <input type="text" name="" id="city" disabled>
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="email" disabled>
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input type="text" name="" id="phone" minlength="11" maxlength="11" disabled>
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
+                            <div>
+                                <label for="post">Post</label>
+                                <input type="text" name="" id="post" disabled>
+                            </div>
+                        <!---------------------->
+                        <!-------------------->
+                            <div>
+                                <label for="sDate">Start Date</label>
+                                <input type="date" name="" id="sDate" disabled>
+                            </div>
+                        <!---------------------->
+
+                        </div>
+                        <!-------------------->
+
+                    </form>
+                </div>
+
+
+            </div>
+    </div>
     </div>
     
     <script src="./bootstrap/js/bootstrap.min.js"></script>
