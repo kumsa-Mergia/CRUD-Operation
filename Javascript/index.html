@@ -15,8 +15,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
+        <div class="row container">
+            <div class="col-12 container">
                 <table class="table table-striped table-hover mt-3 text-center table-border">
 
                     <thead>
@@ -32,9 +32,9 @@
                         <th>Action</th>
                     </thead id="data">
                         
-                    <tbody>
+                    <tbody class="main" id="data-form">
 <!-------------------------------------------->
-                        <tr>
+                        <!-- <tr>
                             <td>2</td>
                             <td><img  class="profile" src="./img/avatar-2.jpg"></td>
                             <td>Abe Kebe</td>
@@ -49,43 +49,7 @@
                                 <button class="btn btn-primary">Update</button>
                                 <button class="btn btn-danger">Delete</button>
                             </td>
-                        </tr>
-<!-------------------------------------------->
-<!-------------------------------------------->
-                        <tr>
-                            <td>3</td>
-                            <td><img  class="profile" src="./img/avatar-3.jpg"></td>
-                            <td>Abe Kebe</td>
-                            <td> 23</td>
-                            <td>Addis Ababa</td>
-                            <td>abe@gmail.com</td>
-                            <td>+251-945-612-043</td>
-                            <td>Inspector</td>
-                            <td>20-05-2017</td>
-                            <td>
-                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData">Show</button>
-                                <button class="btn btn-primary">Update</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
-<!-------------------------------------------->
-<!-------------------------------------------->
-                        <tr>
-                            <td>4</td>
-                            <td><img  class="profile" src="./img/avatar-4.jpg"></td>
-                            <td>Abe Kebe</td>
-                            <td> 23</td>
-                            <td>Addis Ababa</td>
-                            <td>abe@gmail.com</td>
-                            <td>+251-945-612-043</td>
-                            <td>Inspector</td>
-                            <td>20-05-2017</td>
-                            <td>
-                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#readData">Show</button>
-                                <button class="btn btn-primary">Update</button>
-                                <button class="btn btn-danger">Delete</button>
-                            </td>
-                        </tr>
+                        </tr> -->
 <!-------------------------------------------->
 
                     </tbody>
@@ -106,10 +70,10 @@
                     <form action="#" id="myForm">
                         <div class="card imgholder">
                             <label for="imgInput" class="upload">
-                                <input type="file" id="imgInput">
+                                <input type="file" name="" id="imgInput">
                                 <i>+</i>
                             </label>
-                            <img src="./img/avatar-7.jpg" alt="" width="200" height="200">
+                            <img src="./img/person.png" alt="" width="200" height="200">
                         </div>
 
                         <!-------------------->
@@ -139,7 +103,7 @@
                         <!-------------------->
                             <div>
                                 <label for="phone">Phone</label>
-                                <input type="text" name="" id="phone" minlength="11" maxlength="11">
+                                <input type="text" name="" id="phone" minlength="10" maxlength="10">
                             </div>
                         <!---------------------->
                         <!-------------------->
@@ -180,7 +144,7 @@
 
                     <form action="#" id="myForm">
                         <div class="card imgholder">
-                            <img src="./img/avatar-7.jpg" alt="" width="200" height="200">
+                            <img src="./img//person.png" alt="" width="200" height="200">
                         </div>
 
                         <!-------------------->
@@ -236,7 +200,7 @@
             </div>
     </div>
     </div>
-    
+    <script src="./app.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
