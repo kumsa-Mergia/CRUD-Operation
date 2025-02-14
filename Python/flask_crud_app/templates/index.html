@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask CRUD App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+<body>
+    <h1>Task List</h1>
+    <ul>
+        {% for task in task_list %}  <li>
+            <span style="text-decoration: {% if task.completed %}line-through{% endif %};">
+                {{ task.content }}
+            </span>
+            <a href="{{ url_for('update', task_id=loop.index0) }}" class="btn btn-primary btn-sm">Update</a>
+            <a href="{{ url_for('delete', task_id=loop.index0) }}" class="btn btn-danger btn-sm">Delete</a>
+            <a href="{{ url_for('toggle', task_id=loop.index0) }}" class="btn btn-info btn-sm">
+                {% if task.completed %}Uncomplete{% else %}Complete{% endif %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('create') }}" class="btn btn-success">Create New Task</a>
+</body>
+</html>

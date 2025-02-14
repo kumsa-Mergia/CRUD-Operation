@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Task</title>
+</head>
+<body>
+    <h1>Update Task</h1>
+    <form method="POST">  <label for="content">Task Content:</label>
+        <input type="text" name="content" id="content" value="{{ task.content }}" required><br><br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Task List</a>
+</body>
+</html>
