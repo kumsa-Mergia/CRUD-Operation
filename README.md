@@ -3,10 +3,7 @@
 Welcome to the **CRUD Operation** repository! This repository demonstrates how to perform Create, Read, Update, and Delete (CRUD) operations in various programming languages, including:
 
 - JavaScript
-- Go
 - Python
-- Node.js
-- PHP
 
 ## Repository Structure
 
