@@ -12,10 +12,8 @@ The repository is organized into the following directories:
 ```
 CRUD-Operation/
 ├── JavaScript/
-├── Go/
 ├── Python/
-├── Node/
-└── PHP/
+
 ```
 
 Each directory contains the implementation of CRUD operations in the respective language.
